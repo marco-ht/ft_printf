@@ -9,7 +9,6 @@ This repository contains my implementation of the **ft_printf** project, develop
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Testing](#testing)
 - [Acknowledgments](#acknowledgments)
 - [Disclaimer](#disclaimer)
 - [License](#license)
@@ -26,14 +25,12 @@ The repository is organized as follows:
 ft_printf/
 ├── includes/    # Header files containing function prototypes and macros
 ├── srcs/        # Source files implementing the ft_printf functionality
-├── tests/       # Test files and scripts to verify ft_printf behavior
 ├── Makefile     # Makefile for compiling the project
 └── README.md    # This file
 ```
 
 - **includes/**: Contains header files used across the ft_printf implementation.
 - **srcs/**: Contains the source code files, including the main ft_printf function and helper functions.
-- **tests/**: Contains test cases and scripts to validate the correctness of the ft_printf implementation.
 - **Makefile**: Automates the build process for ease of compilation.
 
 ## Installation
@@ -55,23 +52,15 @@ To build the ft_printf project, follow these steps:
    make
    ```
 
-   This command will compile the project and generate an executable (typically named ft_printf or a static library if specified).
+   This command will compile the project and generate a static library file (libftprintf.a).
 
 ## Usage
 
 After successfully compiling the project, you can use ft_printf as follows:
 
-### As a standalone executable:
-
-If you have built an executable, run it from the command line:
-
-```sh
-./ft_printf "Format string with placeholders: %d, %s, %c\n" 42 "example" 'A'
-```
-
 ### Including in your own C projects:
 
-If your project is built as a library, include the header file in your code:
+Include the header file in your code:
 
 ```c
 #include "ft_printf.h"
@@ -82,7 +71,7 @@ int main(void) {
 }
 ```
 
-Compile your code by linking the ft_printf library (if applicable).
+Compile your code by linking the libftprintf.a library.
 
 ## Features
 
@@ -91,28 +80,6 @@ Compile your code by linking the ft_printf library (if applicable).
 - **Robust Error Handling**: Includes checks and balances to handle incorrect or edge-case input formats.
 - **Modular Code Design**: Organized into multiple source files for better code maintainability and readability.
 - **Customizable Output**: Designed to closely mimic the behavior of the standard printf, with room for further enhancements.
-
-## Testing
-
-The tests/ directory includes sample test cases and scripts to verify that ft_printf works as intended.
-
-Run provided tests:
-
-1. Navigate to the tests directory:
-
-   ```sh
-   cd tests
-   ```
-
-2. Execute test scripts:
-
-   Depending on your provided scripts, run the tests by:
-
-   ```sh
-   ./run_tests.sh
-   ```
-
-   This script will compile and execute various test cases to ensure that ft_printf behaves correctly.
 
 ## Acknowledgments
 
