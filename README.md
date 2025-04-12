@@ -2,6 +2,8 @@
 
 This repository contains my implementation of the **ft_printf** project, developed as part of the 42 School curriculum. The goal of this project is to recreate the functionality of the standard `printf` function in C, while adhering to the strict coding standards and best practices required by the 42 School. This project is intended solely for demonstration purposes to showcase my programming skills.
 
+> **Note:** This project is strictly for educational purposes. Use of this code in academic submissions or by other students is prohibited by the 42 School regulations.
+
 ## Table of Contents
 
 - [Overview](#overview)
