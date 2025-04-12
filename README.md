@@ -40,7 +40,7 @@ To build the ft_printf project, follow these steps:
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/ft_printf.git
+   git clone https://github.com/marco-ht/ft_printf.git
    cd ft_printf
    ```
 
